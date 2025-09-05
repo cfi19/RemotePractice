@@ -1,0 +1,3 @@
+This is a practice .txt file to work on my skills.
+
+MODIFICATION: Came back in step 4. Branching.
