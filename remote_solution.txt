@@ -1,0 +1,50 @@
+1. Create a Remote Repository: 
+*Didn't used any commands here -- manually created a repo on my GitHub Account
+
+2. Clone the Repository:
+cd Documents 
+ls
+cd OODP
+git clone https://github.com/cfi19/RemotePractice.git
+
+3. Local Changes and Push:
+ls
+cd RemotePractice
+touch notes.txt
+nano notes.txt
+git add . 
+git status
+git commit -m "Created a notes.txt"
+git push origin main
+
+4. Branching:
+git branch feature-branch
+git checkout feature-branch
+git branch
+touch notes_branch.txt
+nano notes_branch.txt
+nano notes.txt
+cat notes.txt --> This is a practice .txt file to work on my skills.
+cat notes_branch.txt --> This .txt file is to show my skills in making a file using the terminal.
+git add .
+git commit -m "Added notes_branch.txt file and modified notes.txt file in the feature-branch branch"
+
+5. Push New Branch:
+git push feature-branch
+git remote -v
+git branch --show-current feature-branch
+git config --global credential.helper
+git config --show-origin --get-all credential.helper
+ssh -T git@github.com
+git remote set-url origin git@github.com:cfi19/RemotePractice.git
+git remote -v
+git push -u origin feature-branch
+git log
+
+6. Pull Changes:
+git checkout main
+git pull origin main
+git merge feature-branch
+git push origin main
+touch remote_solution.txt
+nano remote_solution.txt
